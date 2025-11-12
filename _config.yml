@@ -50,12 +50,12 @@ skills:
     - STM32Cube IDE
     - Schneider Electric Control Expert (PLC/PAC)
     - Schneider Electric Vijeo Designer (HMI)
-    - Keysight ADS
-    - LTSpice
-    - Xilinx Vivado
-    - KiCad
-    - PrusaSlicer
-    - MATLAB/Simulink
+    - Keysight ADS (RF/EM Design & Simulation)
+    - LTSpice (Circuit Sim)
+    - Xilinx Vivado (FPGA & Digital Design)
+    - KiCad (PCB Design)
+    - PrusaSlicer (3D Printing)
+    - MATLAB/Simulink (Simulation & Modeling)
     - Microsoft Word
     - Microsoft Excel
   - category: Prototyping
@@ -65,7 +65,7 @@ skills:
     - Circuit Simulation (SPICE)
     - Breadboarding
     - Soldering (THT & SMT)
-    - Lab Equipment Usage
+    - Verification (Using Lab Equipment)
   - category: Lab Equipment
     tools:
     - Oscilloscopes & DSOs
@@ -74,14 +74,13 @@ skills:
     - Function Generators
     - Vector Network Analyzers (VNAs)
     - Spectrum Analyzers
-  - category: Programming
+  - category: Programming Languages
     tools:
-    - C
-    - C++
+    - C/C++
     - PLC/PAC (LD, FBD, ST)
-    - Verilog
-    - System-Verilog
+    - Verilog/System-Verilog
     - MATLAB (Scripting Languages)
+    - SPICE
   - category: Development Boards & MCUs
     tools:
     - Arduino Uno R3
@@ -89,15 +88,9 @@ skills:
     - NodeMCU ESP8266
     - NodeMCU ESP32-WROOM
     - WT32-ETH01
-    - RP2040
     - Digilent Basys 3 Artix-7 (FPGA)
     - STM32F746NG-DISCO
     - STM32L4A6ZG-NUCLEO
-  - category: Simulation
-    tools:
-    - LTSpice
-    - Keysight ADS
-    - Simulink
   - category: Soft Skills
     tools:
     - Client Communication
