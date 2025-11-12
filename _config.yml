@@ -44,6 +44,36 @@ external-links:    # input only your own url slug. The icons with missing entrie
 
 # Skills Section - Add the list of your Skills by categories/tools. The indentation for each level needs to be precise. 
 skills:
+  - category: Software
+    tools:
+    - Arduino IDE
+    - STM32Cube IDE
+    - Schneider Electric Control Expert (PLC/PAC)
+    - Schneider Electric Vijeo Designer (HMI)
+    - Keysight ADS
+    - LTSpice
+    - Xilinx Vivado
+    - KiCad
+    - PrusaSlicer
+    - MATLAB/Simulink
+    - Microsoft Word
+    - Microsoft Excel
+  - category: Prototyping
+    tools:
+    - 3D Printing
+    - PCB Design
+    - Circuit Simulation (SPICE)
+    - Breadboarding
+    - Soldering (THT & SMT)
+    - Lab Equipment Usage
+  - category: Lab Equipment
+    tools:
+    - Oscilloscopes & DSOs
+    - Power Supplies
+    - Multimeters
+    - Function Generators
+    - Vector Network Analyzers (VNAs)
+    - Spectrum Analyzers
   - category: Programming
     tools:
     - C
@@ -52,8 +82,6 @@ skills:
     - Verilog
     - System-Verilog
     - MATLAB (Scripting Languages)
-    - Arduino IDE
-    - STM32Cube IDE
   - category: Development Boards & MCUs
     tools:
     - Arduino Uno R3
@@ -65,20 +93,16 @@ skills:
     - Digilent Basys 3 Artix-7 (FPGA)
     - STM32F746NG-DISCO
     - STM32L4A6ZG-NUCLEO
-  - category: Prototyping
-    tools:
-    - 3D Printing
-    - PrusaSlicer
-    - KiCad PCB Design
-    - Keysight ADS
-    - LTSpice Circuit Simulation
-    - Breadboarding
-    - Soldering (THT & SMT)
   - category: Simulation
     tools:
     - LTSpice
     - Keysight ADS
     - Simulink
+  - category: Soft Skills
+    tools:
+    - Client Communication
+    - Professional Email Etiquette
+    - Documentation & Technical Writing
 
 
 # Contact Form Setup. Setup an account and copy over the key. When someone fills out the form, it will be received in your email.
