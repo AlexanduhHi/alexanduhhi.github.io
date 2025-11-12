@@ -56,6 +56,8 @@ skills:
     - KiCad (PCB Design)
     - PrusaSlicer (3D Printing)
     - MATLAB/Simulink (Simulation & Modeling)
+    - Linux OS
+    - OpenLane VLSI Toolchain
     - Microsoft Word
     - Microsoft Excel
   - category: Prototyping
@@ -96,6 +98,20 @@ skills:
     - Client Communication
     - Professional Email Etiquette
     - Documentation & Technical Writing
+  - category: Audio-Visual
+    tools:
+    - ETC Eos & Nomad
+    - Obsidian Onyx
+    - DMXcat
+    - Vixen Lights
+    - Falcon Pi Player (FPP)
+    - Allen&Heath Avantis
+    - Allen&Heath MixWizard
+    - Yamaha QL-5
+    - Ableton Live
+    - FL Studio
+    - Traktor Pro 3/4
+    - Christie Projectors
 
 
 # Contact Form Setup. Setup an account and copy over the key. When someone fills out the form, it will be received in your email.
