@@ -52,8 +52,8 @@ skills:
     - Verilog
     - System-Verilog
     - MATLAB (Scripting Languages)
-    - Arduino
-    - STM32Cube
+    - Arduino IDE
+    - STM32Cube IDE
   - category: Development Boards & MCUs
     tools:
     - Arduino Uno R3
@@ -75,6 +75,7 @@ skills:
     - Breadboarding
     - Soldering (THT & SMT)
   - category: Simulation
+    tools:
     - LTSpice
     - Keysight ADS
     - Simulink
