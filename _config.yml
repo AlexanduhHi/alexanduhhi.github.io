@@ -14,9 +14,9 @@ title: Alex Elliott's Portfolio # This is what shows up in the tab of the browse
 # Hero Section
 name: Alex Elliott
 headline: Electrical Engineering BS + MS Graduate of Cal Poly SLO
-description:  # dont remove this line. this will ignore all new lines until the next section
-  Master's Thesis:  "Nonlinear Integral Control Schemes for a Cadence-Heartrate Process”\
-  Senior Design Project:  "Digital Audio Synthesizer"\
+description: >- # dont remove this line. this will ignore all new lines until the next section
+  Master's Thesis:  "Nonlinear Integral Control Schemes for a Cadence-Heartrate Process”
+  Senior Design Project:  "Digital Audio Synthesizer"
   Electrical Engineering graduate with 4+ years of experience with Audio-Visual systems and interests in Control Systems, Signal Processing, Embedded Systems, and Audio Electronics.
   Hobbies and personal interests include DIY Light-Show Design, Modular Synthesizers, and Electronic Music Production & DJing.
   
