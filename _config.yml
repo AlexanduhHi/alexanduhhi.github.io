@@ -59,8 +59,12 @@ skills:
     - Arduino Uno R3
     - Arduino Mega 2560
     - NodeMCU ESP8266
-    - NodeMCU ESP32-WROOM-32
+    - NodeMCU ESP32-WROOM
     - WT32-ETH01
+    - RP2040
+    - Digilent Basys 3 Artix-7 (FPGA)
+    - STM32F746NG-DISCO
+    - STM32L4A6ZG-NUCLEO
   - category: Prototyping
     tools:
     - 3D Printing
