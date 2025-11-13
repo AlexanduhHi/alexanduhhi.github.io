@@ -13,5 +13,5 @@ skills:
 - Verification (using Lab Equipment)
 - Oscilloscopes & DSOs
 - Documentation & Technical Writing
-main-image: /DAS_on.webp 
+main-image: /DAS_on.jpg 
 ---
