@@ -30,7 +30,7 @@ The image below shows the top-level block diagram for the Digital Audio Synthesi
 
 From there we used functional decomposition to get a more detailed diagram, shown below. The "Digital Signal Processor" and the "UI Engine" together make up the "Synth Engine", whose job is to take user input (and power) and spit out an audio signal and some form of user feedback.
 
-{% include image-gallery.html images="func_decomp3.png" height="400" %}
+{% include image-gallery.html images="func_decomp_3.png" height="400" %}
 
 The Synth Engine is the most complex part of the project, and it breaks down further into the image below. We did the same for the other modules but I won't include them here. Check the full report linked at the end for details.
 
