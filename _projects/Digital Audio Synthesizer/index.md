@@ -22,9 +22,19 @@ The device takes user-controlled parameters (adjusted using encoders/buttons) an
 
 Philip Schremp (a fellow EE) was my partner for this project and I had a blast working on this with him! We worked together on the entire concept from the ground up and divided up the different code modules between us. We both developed the system decomposition and project plan, researched and ordered parts from Digikey, and integrated the code modules together. Philip focused on the various signal processing components including the oscillators/LFOs, filters, ADSR, and DAC, whereas I focused on the external interfaces like the MIDI input circuitry, I2C encoder/button/LED interfaces, and their associated code modules and integrations. After the various code modules were done, we worked together to integrate everything together (system integration) and test/validate the design. Philip was also in charge of getting an enclosure 3D printed and getting a basic display going, and I was in charge of connecting the different components together inside the enclosure.
 
-/DAS_off.jpg
+{% include image-gallery.html images="DAS_off.jpg" height="400" %}
 
+The image below shows the top-level block diagram for the Digital Audio Synthesizer.
 
+{% include image-gallery.html images="top_level_diagram.jpg" height="400" %}
+
+From there we used functional decomposition to get a more detailed diagram, shown below. The "Digital Signal Processor" and the "UI Engine" together make up the "Synth Engine", whose job is to take user input (and power) and spit out an audio signal and some form of user feedback.
+
+{% include image-gallery.html images="func_decomp3.jpg" height="400" %}
+
+The Synth Engine is the most complex part of the project, and it breaks down further into the image below. We did the same for the other modules but I won't include them here. Check the full report linked at the end for details.
+
+{% include image-gallery.html images="synth_engine.jpg" height="400" %}
 
 Please check the following link for the full documentation for this project:
 [https://digitalcommons.calpoly.edu/eesp/646/](https://digitalcommons.calpoly.edu/eesp/646/)
