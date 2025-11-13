@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Digital Audio Synthesizer
-description:  My senior design project for my Bachelor's degree, which is a Digital Audio Synthesizer that utilizes digital signal processing (DSP) techniques and extensive programming in the STM32 development environment. Group project with Philip Schremp, a fellow EE graduate.
+description:  My senior design project for my Bachelor's degree, which is a Digital Audio Synthesizer that utilizes digital signal processing (DSP) techniques and extensive programming in the STM32 development environment. Group project with Philip Schremp, a fellow EE & Cal Poly alum.
 skills: 
 - STM32Cube IDE
 - STM32F746NG-DISCO
