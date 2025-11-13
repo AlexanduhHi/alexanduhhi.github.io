@@ -11,7 +11,7 @@
               loading="lazy"
           />
       {% else %}
-          {% assign page_url_without_index = page.url | remove: 'index' | remove_first: '/' | remove: '.html' %}
+          {% assign page_url_without_index = page.url | remove: 'index' | remove: '.html' %}
           <img 
               src="{{ page_url_without_index }}{{ image_name }}" 
               alt="{{image_name}}"
