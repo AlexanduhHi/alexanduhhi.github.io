@@ -32,7 +32,7 @@ Starting from that top-level diagram, we performed a functional decomposition to
 
 {% include image-gallery.html images="func_decomp_3.png" height="400" %}
   
-The Synth Engine is the most complex part of the project, and it breaks down further into the image below. We did the same for the other modules but I won't include them here. Check the full report linked at the end for details[^2].  
+The Synth Engine is the most complex part of the project, and it breaks down further as shown in the image below. (We did the same decomposition for the other modules but they won't be included here. Check the full report linked at the end for details[^2]).  
 
 {% include image-gallery.html images="synth_engine.png" height="400" %}
   
