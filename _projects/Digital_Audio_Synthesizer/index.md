@@ -18,9 +18,9 @@ skills:
 main-image: /DAS_on.jpg 
 ---
 
-The device takes user-controlled parameters (adjusted using encoders/buttons) and musical-instrument digital interface (MIDI) signals and uses them to synthesize electronic sounds. The goal was to emulate the standard analog subtractive synthesizer, with at least one oscillator (VCO), filter (VCF), amplifier (VCA), envelope-generator (EG) or attack/decay/sustain/release (ADSR), and low-frequency oscillator (LFO), while also allowing for some interesting modulation between these different "modules" using a "modulation matrix". All the parameters of the different modules are user-controllable via the encoders, their respective buttons, and the touch-screen[^1].
+The device takes user-controlled parameters (adjusted using encoders/buttons) and musical-instrument digital interface (MIDI) signals and uses them to synthesize electronic sounds. The goal was to emulate the standard analog subtractive synthesizer, with at least one oscillator (VCO), filter (VCF), amplifier (VCA), envelope-generator (EG) or attack/decay/sustain/release (ADSR), and low-frequency oscillator (LFO), while also allowing for some interesting modulation between these different "modules" using a "modulation matrix". All the parameters of the different modules are user-controllable via the encoders, their respective buttons, and the touch-screen[^*].
 
-Philip Schremp (a fellow EE) was my partner for this project and I had a blast working on this with him! We worked together on the entire concept from the ground up and divided up the different code modules between us. We both developed the system decomposition and project plan, researched and ordered parts from Digikey, and integrated the code modules together. Philip focused on the various signal processing components including the oscillators/LFOs, filters, ADSR, and DAC, whereas I focused on the external interfaces like the MIDI input circuitry, I2C encoder/button/LED interfaces, and their associated code modules and integrations. After the various code modules were done, we worked together to integrate everything and test/validate the design. Philip was also in charge of getting an enclosure 3D printed and getting a basic display* going, and I was in charge of connecting the different components together inside the enclosure.[^2]  
+Philip Schremp (a fellow EE) was my partner for this project and I had a blast working on this with him! We worked together on the entire concept from the ground up and divided up the different code modules between us. We both developed the system decomposition and project plan, researched and ordered parts from Digikey, and integrated the code modules together. Philip focused on the various signal processing components including the oscillators/LFOs, filters, ADSR, and DAC, whereas I focused on the external interfaces like the MIDI input circuitry, I2C encoder/button/LED interfaces, and their associated code modules and integrations. After the various code modules were done, we worked together to integrate everything and test/validate the design. Philip was also in charge of getting an enclosure 3D printed and getting a basic display* going, and I was in charge of connecting the different components together inside the enclosure.[^**]  
 
 {% include image-gallery.html images="DAS_off.jpg" height="400" %}
   
@@ -32,11 +32,11 @@ Starting from that top-level diagram, we performed a functional decomposition to
 
 {% include image-gallery.html images="func_decomp_3.png" height="400" %}
   
-The Synth Engine is the most complex part of the project, and it breaks down further as shown in the image below. (We did the same decomposition for the other modules but they won't be included here. Check the full report linked at the end for details[^2]).  
+The Synth Engine is the most complex part of the project, and it breaks down further as shown in the image below. (We did the same decomposition for the other modules but they won't be included here. Check the full report linked at the end for details[^**]).  
 
 {% include image-gallery.html images="synth_engine.png" height="400" %}
   
-[^1]: The touchscreen was not fully implemented due to time constraints. The display works, but the "touch" feature is not implemented. Also, the UI leaves a lot to be desired, and this is one area for future development.  
+[^*]: The touchscreen was not fully implemented due to time constraints. The display works, but the "touch" feature is not implemented. Also, the UI leaves a lot to be desired, and this is one area for future development.  
 
-[^2]: Please check the following link for the full documentation for this project:  
+[^**]: Please check the following link for the full documentation for this project:  
 [https://digitalcommons.calpoly.edu/eesp/646/](https://digitalcommons.calpoly.edu/eesp/646/)
