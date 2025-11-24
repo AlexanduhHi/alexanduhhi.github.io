@@ -20,11 +20,7 @@ main-image: /DAS_on.jpg
 
 The device takes user-controlled parameters (adjusted using encoders/buttons) and musical-instrument digital interface (MIDI) signals and uses them to synthesize electronic sounds. The goal was to emulate the standard analog subtractive synthesizer, with at least one oscillator (VCO), filter (VCF), amplifier (VCA), envelope-generator (EG) or attack/decay/sustain/release (ADSR), and low-frequency oscillator (LFO), while also allowing for some interesting modulation between these different "modules" using a "modulation matrix". All the parameters of the different modules are user-controllable via the encoders, their respective buttons, and the touch-screen[^1].
 
-&nbsp;
-
 Philip Schremp (a fellow EE) was my partner for this project and I had a blast working on this with him! We worked together on the entire concept from the ground up and divided up the different code modules between us. We both developed the system decomposition and project plan, researched and ordered parts from Digikey, and integrated the code modules together. Philip focused on the various signal processing components including the oscillators/LFOs, filters, ADSR, and DAC, whereas I focused on the external interfaces like the MIDI input circuitry, I2C encoder/button/LED interfaces, and their associated code modules and integrations. After the various code modules were done, we worked together to integrate everything and test/validate the design. Philip was also in charge of getting an enclosure 3D printed and getting a basic display[^1] going, and I was in charge of connecting the different components together inside the enclosure.[^2]  
-
-&nbsp;
 
 {% include image-gallery.html images="DAS_off.jpg" height="400" %}
 
