@@ -47,7 +47,24 @@ The Synth Engine is arguably the most complex part of the project, and it breaks
 &nbsp;
 
 **Implementation**
+&nbsp;
 
+We decided to base this project around the STM32F746NG-DISCO discovery board, which includes an on-board DAC and touchscreen display[^1]. The STM32F746NG also has a dedicated floating-point unit (FPU) which is useful for DSP applications.
+
+Many of the functional blocks have obvious implementations. For example, the power comes from a USB connection, the display acts as the primary visual feedback for the user, and the audio output comes from the on-board DAC (WM8994). Both the on-board DAC and the touchscreen display have HAL support, allowing for easier integration with the rest of the project components. This meant the majority of the project effort would be focused on the following components:
+* DSP (synthesizer "modules")
+* UI design (visual user-feedback)
+* Controls (user inputs)
+* MIDI input (musical note information)
+
+**Conclusion**
+&nbsp;
+
+Looking back, if I were to embark on another project like this one, I would spend more time designing the enclosure. For this project we were getting very close to the deadline and needed to "just get the thing in a box," resulting in a barely sufficient enclosure.
+
+Also, I would've spent more time thoroughly understanding the DSP aspects of the project. Philip handled most of the DSP for the project and that meant I wasn't able to help troubleshoot when things weren't working. It was quite a struggle getting each of the synth modules to behave when connected together.
+
+Overall, this project went well, I enjoyed working with Philip on it, and there's lots of room for improvement. The UI/UX isn't that great currently, and the device isn't very "playable" currently from a musical standpoint, but given the strict time-constraints I am pretty happy with it. I hope to work more on this as time permits to improve the design and make it more musically-useful and fun to play!
 
 **Footnotes**
 &nbsp;
