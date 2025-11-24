@@ -57,6 +57,15 @@ Many of the functional blocks have obvious implementations. For example, the pow
 * Controls (user inputs)
 * MIDI input (musical note information)
 
+As I mentioned earlier, Philip handled the majority of the synthesizer "module" programming. Philip used wavetables (arrays of sample values) for the oscillators and biquad topologies for the filters, and I refer the reader to our final report[^2] for more details regarding the DSP considerations.
+
+For the UI and controls, we decided to use rotary encoders with built-in LEDs in addition to the touchscreen display[^1]. We used a total of four I2C rotary encoder boards from Adafruit, which include on-board "Neopixel" (WS281x) RGB LEDs. We supplied our own encoders for these boards so that we could pick the number of detents per rotation and choose encoders that include built-in push-buttons. The encoder boards are part of Adafruit's **Seesaw** family of products, meaning that they have direct library support in Arduino and CircuitPython development environments. Unfortunately, these libraries don't translate to the STM32 environment very well due to fundamental differences in programming methodology and standards between Arduino and STM32[^3]. Long story short, I ended up writing my own basic Adafruit Seesaw library that interfaces with the HAL's I2C handler, and then writing a separate module in that library specifically for the encoder boards. My library handles the I2C intialization, the Adafruit Seesaw initialization, and all the encoder, button, and LED interfaces. You can check out this library here[^4]!
+
+Finally, for the MIDI input, we were considering trying USB-MIDI, but given the time-constraints for this project we decided against it. We ended up using one of the STM32F7's UARTs with the tried-and-true standard MIDI-input circuit published my the MIDI Manufacturers Association way back in 1985, shown in the image below. Since the synthesizer doesn't need any MIDI output or MIDI "thru" capability, we ignored those parts of the schematic. I acquired the opto-coupler, diode, MIDI connector, and other specified components and soldered everything together on a perfboard. Then, I wrote my own MIDI library that interacts with the HAL's UART interfaces. You can find my MIDI library here[^5]!
+
+{% include image-gallery.html images="midi_circuit.png" height="400" %}
+&nbsp;
+
 **Conclusion**
 &nbsp;
 
@@ -64,7 +73,7 @@ Looking back, if I were to embark on another project like this one, I would spen
 
 Also, I would've spent more time thoroughly understanding the DSP aspects of the project. Philip handled most of the DSP for the project and that meant I wasn't able to help troubleshoot when things weren't working. It was quite a struggle getting each of the synth modules to behave when connected together.
 
-Overall, this project went well, I enjoyed working with Philip on it, and there's lots of room for improvement. The UI/UX isn't that great currently, and the device isn't very "playable" currently from a musical standpoint, but given the strict time-constraints I am pretty happy with it. I hope to work more on this as time permits to improve the design and make it more musically-useful and fun to play!
+Overall, this project went well, I enjoyed working with Philip on it, and there's lots of room for improvement. The UI/UX isn't that great currently, and the device isn't very "playable" currently from a musical standpoint, but given the strict time-constraints I am pretty happy with it. I hope to work more on this as time permits to improve the design and make it more musically-useful and fun to play! Please read the full report[^2] for more information about this project.
 
 **Footnotes**
 &nbsp;
@@ -72,3 +81,9 @@ Overall, this project went well, I enjoyed working with Philip on it, and there'
 [^1]: The touchscreen was not fully implemented due to time constraints. The display works, but the "touch" feature is not implemented. Also, the UI leaves a lot to be desired, and this is one area for future development.  
 
 [^2]: Please check the following link for the full documentation for this project: [https://digitalcommons.calpoly.edu/eesp/646/](https://digitalcommons.calpoly.edu/eesp/646/)
+
+[^3]: Arduino libraries are meant to be user-friendly and easy to use, but this means they handle all the hardware interface "magic" behind the scenes. On the other hand, STM provides a hardware abstraction layer (HAL) interface (meant to make software modules transferable between STM32 devices) but leaves a lot of the setup up to the programmer. While this might make STM32 more flexible by giving programmers more direct access to the lower-level (LL) programming interfaces, this also means that one cannot simply "initialize I2C" with a single line as in Arduino.
+
+[^4]: Adafruit Seesaw Library: null
+
+[^5]: MIDI Library: null
