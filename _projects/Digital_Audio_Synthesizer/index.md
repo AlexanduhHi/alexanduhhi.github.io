@@ -60,5 +60,4 @@ The Synth Engine is the most complex part of the project, and it breaks down fur
 
 [^1]: The touchscreen was not fully implemented due to time constraints. The display works, but the "touch" feature is not implemented. Also, the UI leaves a lot to be desired, and this is one area for future development.  
 
-[^2]: Please check the following link for the full documentation for this project:  
-[https://digitalcommons.calpoly.edu/eesp/646/](https://digitalcommons.calpoly.edu/eesp/646/)
+[^2]: Please check the following link for the full documentation for this project: [https://digitalcommons.calpoly.edu/eesp/646/](https://digitalcommons.calpoly.edu/eesp/646/)
