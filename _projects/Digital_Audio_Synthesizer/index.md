@@ -18,11 +18,17 @@ skills:
 main-image: /DAS_on.jpg 
 ---
 
+**Overview**
+&nbsp;
+
 The device takes user-controlled parameters (adjusted using encoders/buttons) and musical-instrument digital interface (MIDI) signals and uses them to synthesize electronic sounds. The goal was to emulate the standard analog subtractive synthesizer, with at least one oscillator (VCO), filter (VCF), amplifier (VCA), envelope-generator (EG) or attack/decay/sustain/release (ADSR), and low-frequency oscillator (LFO), while also allowing for some interesting modulation between these different "modules" using a "modulation matrix". All the parameters of the different modules are user-controllable via the encoders, their respective buttons, and the touch-screen[^1].
 
 Philip Schremp (a fellow EE) was my partner for this project and I had a blast working on this with him! We worked together on the entire concept from the ground up and divided up the different code modules between us. We both developed the system decomposition and project plan, researched and ordered parts from Digikey, and integrated the code modules together. Philip focused on the various signal processing components including the oscillators/LFOs, filters, ADSR, and DAC, whereas I focused on the external interfaces like the MIDI input circuitry, I2C encoder/button/LED interfaces, and their associated code modules and integrations. After the various code modules were done, we worked together to integrate everything and test/validate the design. Philip was also in charge of getting an enclosure 3D printed and getting a basic display[^1] going, and I was in charge of connecting the different components together inside the enclosure.[^2]  
 
 {% include image-gallery.html images="DAS_off.jpg" height="400" %}
+&nbsp;
+
+**System Block Diagrams**
 &nbsp;
 
 The image below shows the top-level block diagram for the Digital Audio Synthesizer. The inputs to the unit are power (via a 5V USB connection, converting from 120 VAC), MIDI information (a 31.25kbps serial data-transfer protocol), and any user interactions with the device. The outputs from the unit are an audio signal (via a 1/4-inch TRS audio jack) and visual feedback for the user.  
@@ -35,10 +41,12 @@ Starting from that top-level diagram, we performed a functional decomposition to
 {% include image-gallery.html images="func_decomp_3.png" height="400" %}
 &nbsp;
 
-The Synth Engine is the most complex part of the project, and it breaks down further as shown in the image below. (We did the same decomposition for the other modules but they won't be included here. Check the full report linked at the end for details[^2]).  
+The Synth Engine is arguably the most complex part of the project, and it breaks down further as shown in the image below. (We did the same decomposition for the other modules but they won't be included here. Check the full report linked at the end for details[^2]).  
 
 {% include image-gallery.html images="synth_engine.png" height="400" %}
 &nbsp;
+
+**Implementation**
 
 
 **Footnotes**
