@@ -7,7 +7,7 @@
 
 # Main Page Setup
 
-title: Alex Elliott's Portfolio # This is what shows up in the tab of the browser
+title: (WIP) Alex Elliott's Portfolio # This is what shows up in the tab of the browser
 
 
 # Hero Section
@@ -16,6 +16,7 @@ headline: Electrical Engineering BS + MS Graduate of Cal Poly SLO
 description: >- # dont remove this line. this will ignore all new lines until the next section
   Electrical Engineering graduate with 4+ years of experience with Audio-Visual systems and career interests including Control Systems, Signal Processing, Embedded Systems, and Audio Electronics.
   Hobbies and personal interests include DIY Light-Show Design, Modular Synthesizers, and Electronic Music Production & DJing.
+  Please note that this page is work-in-progress and as such it may not include all projects I have been working on.
   
 
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
